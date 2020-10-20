@@ -57,15 +57,15 @@
     }
 
     .panel1 {
-      background-image: url(https://media1.tenor.com/images/a5415b9b8f91d100c255387c41c37db5/tenor.gif?itemid=9852215);
+      background-image: url(https://media.tenor.com/images/159b716ae5bb2ba3f5d2e7c1e03f9d59/tenor.gif);
     }
 
     .panel2 {
-      background-image: url(https://media3.giphy.com/media/gKsJUddjnpPG0/200.gif);
+      background-image: url(https://media.tenor.com/images/7a059e812ebbac916587a247f96bda1a/tenor.gif);
     }
 
     .panel3 {
-      background-image: url(https://stayhipp.com/wp-content/uploads/2020/03/shu.jpg);
+      background-image: url(https://media1.tenor.com/images/5c36b5497629f905d0c011d16f01c0ff/tenor.gif?itemid=10312546);
     }
 
     .panel4 {
@@ -123,13 +123,13 @@
   <div class="panels">
     <div class="panel panel1">
       <p>Hey</p>
-      <p>So uhh</p>
-      <p>You don't like me right?</p>
+      <p>Bitch</p>
+      <p></p>
     </div>
     <div class="panel panel2">
-      <p>I think</p>
-      <p>We need</p>
-      <p>To talk more</p>
+      <p>But I believe</p>
+      <p>We should</p>
+      <p>Talk more</p>
     </div>
     <div class="panel panel3">
       <p>Because,</p>
@@ -142,9 +142,9 @@
       <p>but you should too</p>
     </div>
     <div class="panel panel5">
-      <p>But ay</p>
-      <p>I got some advice </p>
-      <p>You should leave me, cuz I suck. But I know...</p>
+      <p>But ay I got some advice</p>
+      <p></p>
+      <p>You should leave me, cuz I suck. But I know↑</p>
     </div>
   </div>
 
@@ -155,7 +155,16 @@
       this.classList.toggle('open')
     }
 
+    function toggleActive (event) {
+      if (event.propertyName.includes('flex')) {
+        this.classList.toggle('open-active')
+      }
+    }
+
     panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+
+    panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+
   </script>
 
 
