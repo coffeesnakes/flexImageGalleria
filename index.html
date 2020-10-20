@@ -47,26 +47,32 @@
       font-size: 20px;
       background-size: cover;
       background-position: center;
+      flex: 1;
+      justify-content:center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+
     }
 
     .panel1 {
-      background-image: url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500);
+      background-image: url(https://wompampsupport.azureedge.net/fetchimage?siteId=7575&v=2&jpgQuality=100&width=700&url=https%3A%2F%2Fi.kym-cdn.com%2Fentries%2Ficons%2Ffacebook%2F000%2F018%2F489%2Fnick-young-confused-face-300x256-nqlyaa.jpg);
     }
 
     .panel2 {
-      background-image: url(https://source.unsplash.com/rFKUFzjPYiQ/1500x1500);
+      background-image: url(https://media3.giphy.com/media/gKsJUddjnpPG0/200.gif);
     }
 
     .panel3 {
-      background-image: url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d);
+      background-image: url(https://media4.giphy.com/media/3oz8xZvvOZRmKay4xy/giphy.gif);
     }
 
     .panel4 {
-      background-image: url(https://source.unsplash.com/ITjiVXcwVng/1500x1500);
+      background-image: url(https://media.tenor.com/images/7e36f448e032d6ef74d41adfe736d359/tenor.gif);
     }
 
     .panel5 {
-      background-image: url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500);
+      background-image: url(https://media2.giphy.com/media/5thaAuHCJwhLbKwu94/giphy.gif);
     }
 
     /* Flex Children */
@@ -74,8 +80,19 @@
       margin: 0;
       width: 100%;
       transition: transform 0.5s;
+            /* border: 1px solid red; */
+      flex: 1 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
+    .panel > *:first-child {
+      transform: translateY(-100%);
+    }
+    .panel > *:last-child {
+      transform: translateY(100%);
+    }
     .panel p {
       text-transform: uppercase;
       font-family: 'Amatic SC', cursive;
@@ -96,28 +113,28 @@
   <div class="panels">
     <div class="panel panel1">
       <p>Hey</p>
-      <p>Let's</p>
-      <p>Dance</p>
+      <p>This</p>
+      <p>Is how you make me feel</p>
     </div>
     <div class="panel panel2">
-      <p>Give</p>
-      <p>Take</p>
-      <p>Receive</p>
+      <p>I think</p>
+      <p>We should</p>
+      <p>talk more</p>
     </div>
     <div class="panel panel3">
-      <p>Experience</p>
-      <p>It</p>
-      <p>Today</p>
+      <p>Because,</p>
+      <p>In</p>
+      <p>All honesty...</p>
     </div>
     <div class="panel panel4">
-      <p>Give</p>
-      <p>All</p>
-      <p>You can</p>
+      <p>You</p>
+      <p>Are</p>
+      <p>Confusing!!</p>
     </div>
     <div class="panel panel5">
-      <p>Life</p>
-      <p>In</p>
-      <p>Motion</p>
+      <p>And sometimes..</p>
+      <p>I am </p>
+      <p>Confusing!!</p>
     </div>
   </div>
 
