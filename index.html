@@ -30,6 +30,7 @@
     .panels {
       min-height: 100vh;
       overflow: hidden;
+      display: flex;
     }
 
     .panel {
@@ -56,7 +57,7 @@
     }
 
     .panel1 {
-      background-image: url(https://wompampsupport.azureedge.net/fetchimage?siteId=7575&v=2&jpgQuality=100&width=700&url=https%3A%2F%2Fi.kym-cdn.com%2Fentries%2Ficons%2Ffacebook%2F000%2F018%2F489%2Fnick-young-confused-face-300x256-nqlyaa.jpg);
+      background-image: url(https://media1.tenor.com/images/a5415b9b8f91d100c255387c41c37db5/tenor.gif?itemid=9852215);
     }
 
     .panel2 {
@@ -64,15 +65,15 @@
     }
 
     .panel3 {
-      background-image: url(https://media4.giphy.com/media/3oz8xZvvOZRmKay4xy/giphy.gif);
+      background-image: url(https://stayhipp.com/wp-content/uploads/2020/03/shu.jpg);
     }
 
     .panel4 {
-      background-image: url(https://media.tenor.com/images/7e36f448e032d6ef74d41adfe736d359/tenor.gif);
+      background-image: url(https://media1.tenor.com/images/50b62254668c8831668faacdfd4ffad3/tenor.gif?itemid=15680828);
     }
 
     .panel5 {
-      background-image: url(https://media2.giphy.com/media/5thaAuHCJwhLbKwu94/giphy.gif);
+      background-image: url(https://media1.tenor.com/images/e4f9236bcb84cac6c51d3ef4d1565c77/tenor.gif?itemid=4746128);
     }
 
     /* Flex Children */
@@ -90,7 +91,15 @@
     .panel > *:first-child {
       transform: translateY(-100%);
     }
+    .panel.open-active > *:first-child {
+      transform: translateY(0);
+    }
+
     .panel > *:last-child {
+      transform: translateY(100%);
+    }
+
+    .panel.panel.open-active > *:last-child {
       transform: translateY(100%);
     }
     .panel p {
@@ -113,28 +122,28 @@
   <div class="panels">
     <div class="panel panel1">
       <p>Hey</p>
-      <p>This</p>
-      <p>Is how you make me feel</p>
+      <p>So uhh</p>
+      <p>You don't like me right?</p>
     </div>
     <div class="panel panel2">
       <p>I think</p>
-      <p>We should</p>
-      <p>talk more</p>
+      <p>We need</p>
+      <p>To talk more</p>
     </div>
     <div class="panel panel3">
       <p>Because,</p>
-      <p>In</p>
-      <p>All honesty...</p>
+      <p>You is</p>
+      <p>Confusing.</p>
     </div>
     <div class="panel panel4">
-      <p>You</p>
-      <p>Are</p>
-      <p>Confusing!!</p>
+      <p>I want to </p>
+      <p>do better</p>
+      <p>but you should too</p>
     </div>
     <div class="panel panel5">
-      <p>And sometimes..</p>
-      <p>I am </p>
-      <p>Confusing!!</p>
+      <p>But ay</p>
+      <p>I got some advice </p>
+      <p>You should leave me, cuz I suck. But I know...</p>
     </div>
   </div>
 
